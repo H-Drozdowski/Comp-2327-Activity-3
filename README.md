@@ -6,7 +6,7 @@ This activity will help to reinforce learning of the Module 3 concepts of:
 
 ## Author
 
-[Your name]
+Hudson Drozdowski
 
 ## Additional Information
 
