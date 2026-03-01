@@ -10,4 +10,8 @@ Hudson Drozdowski
 
 ## Additional Information
 
-[ Use this space to include additional information that may help in your learning. ]
+3 Components I implemented in this activity:
+
+- Design patterns using the strategy pattern.
+- I implemented the strategy design pattern within the PaymentStrategy and it sub classes.
+- I applied the pattern within the Payment class.
