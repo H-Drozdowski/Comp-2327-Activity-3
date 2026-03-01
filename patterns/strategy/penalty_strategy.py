@@ -1,6 +1,6 @@
 """This module defines the PenaltyStrategy class."""
 
-from payment_strategy import PaymentStrategy
+from .payment_strategy import PaymentStrategy
 from billing_account.billing_account import BillingAccount
 from payee.payee import Payee 
 
@@ -36,6 +36,6 @@ class PenaltyStrategy(PaymentStrategy):
             return(f"Processed payment of ${amount}. New balance: ${new_balance:,.2f}.")
         else:
             account.add_balance(payee, 10.0)
-            new_balance = account.get_balance()
+            new_balance = account.get_balance(payee)
             return(f"Insufficient payment. Added penalty fee of "
                    f"$10.00. New balance: ${new_balance}.")

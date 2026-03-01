@@ -1,6 +1,6 @@
 """This module defines the PartialPaymentStrategy class."""
 
-from payment_strategy import PaymentStrategy
+from .payment_strategy import PaymentStrategy
 from billing_account.billing_account import BillingAccount
 from payee.payee import Payee 
 
