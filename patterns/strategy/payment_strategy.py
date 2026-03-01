@@ -8,10 +8,10 @@ __author__ = "Hudson Drozdowski"
 __version__ = "3.14.2"
 
 class PaymentStrategy(ABC):
-    """Represents a payment strategy."""
+    """Represents the payment strategy."""
 
     @abstractmethod
-    def process_payment(account : BillingAccount, payee : 
+    def process_payment(self, account : BillingAccount, payee : 
                         Payee, amount : float) -> str:
         """Processes a payment being paid to a payee and returns a 
         string representing the processed payment.

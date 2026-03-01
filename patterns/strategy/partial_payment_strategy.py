@@ -8,9 +8,9 @@ __author__ = "Hudson Drozdowski"
 __version__ = "3.14.2"
 
 class PartialPaymentStrategy(PaymentStrategy):
-    """Represents a partial payment strategy."""
+    """Represents the partial payment strategy."""
     
-    def process_payment(account : BillingAccount, payee : Payee, 
+    def process_payment(self, account : BillingAccount, payee : Payee, 
                         amount : float) -> str:
         """Processes a partial payment being paid to a payee and returns
         a string representing the processed payment.
@@ -31,6 +31,6 @@ class PartialPaymentStrategy(PaymentStrategy):
         new_balance = account.get_balance(payee)
 
         if new_balance <= 0:
-            return(f"Processed payment of ${amount}. New Balance: ${new_balance:,.2f}.")
+            return(f"Processed payment of ${amount}. New balance: ${new_balance:,.2f}.")
         else:
-            return(f"Partial payment of ${amount} accepted. New balance ${new_balance:,.2f}.")
+            return(f"Partial payment of ${amount} accepted. New balance: ${new_balance:,.2f}.")
