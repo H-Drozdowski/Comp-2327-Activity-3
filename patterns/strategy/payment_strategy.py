@@ -13,7 +13,8 @@ class PaymentStrategy(ABC):
     @abstractmethod
     def process_payment(account : BillingAccount, payee : 
                         Payee, amount : float) -> str:
-        """Returns a string representing the processed payment.
+        """Processes a payment being paid to a payee and returns a 
+        string representing the processed payment.
         
         Args:
             account (BillingAccount): An instance of the BillingAccount
