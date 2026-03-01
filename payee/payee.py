@@ -1,8 +1,7 @@
 """This module defines the Payee enumeration."""
 
-__author__ = "ACE Faculty"
-__version__ = "1.0.0"
-__credits__ = ""
+__author__ = "Hudson Drozdowski"
+__version__ = "3.14.2"
 
 from enum import Enum
 
