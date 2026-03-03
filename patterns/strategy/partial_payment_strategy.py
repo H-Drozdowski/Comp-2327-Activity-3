@@ -17,9 +17,9 @@ class PartialPaymentStrategy(PaymentStrategy):
         
         Args:
             account (BillingAccount): An instance of the BillingAccount
-                class representing a users billing account.
+            class representing a users billing account.
             payee (Payee): An instance of the Payee class representing 
-                the receiver of the payment.
+            the receiver of the payment.
             amount (float): The amount of money being paid to the payee. 
             
         Returns:

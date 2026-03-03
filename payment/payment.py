@@ -18,8 +18,9 @@ class Payment():
                 payment strategy.
         
         Raises:
-            - ValueError: A ValueError is raised when the argument value
-            of strategy is not of the PaymentStrategy type.
+            ValueError: 
+                - A ValueError is raised when the argument value
+                of strategy is not of the PaymentStrategy type.
         """
 
         if not isinstance(strategy, PaymentStrategy):
